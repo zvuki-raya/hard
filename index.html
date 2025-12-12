@@ -1,0 +1,106 @@
+<!DOCTYPE html>                                                                     
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4b6e5" data-react-helmet="true">
+    <title>[IV] Within Reach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay" class="overlay" onclick="removeOverlay();">
+        <p class="glitch overlay-text">Click To Enter</p>
+    </div>
+
+    <audio id="audio-player" src="./assets/main_menu.mp3" loop></audio>
+
+<div class="blink">
+    <pre class="ascii-logo">
+  ███                                                      ███  ████ 
+ ░░░                                                      ░░░  ░░███ 
+ ████  ████████   ██████  ████████   █████ █████  ██████  ████  ░███ 
+░░███ ░░███░░███ ███░░███░░███░░███ ░░███ ░░██  ███░░███░░███  ░███ 
+ ░███  ░███ ░░░ ░███ ░███ ░███ ░███  ░███  ░█ ░███████  ░███  ░███ 
+ ░██  ░███     ░███ ░███ ░███ ░███  ░░███ ███  ░███░░░   ░███  ░███ 
+██████ █████    ░░██████  ████ █████  ░░███   ░░██████  █████ █████
+░░░░░ ░░░░░      ░░░░░░  ░░░░ ░░░░░    ░░░░░     ░░░░░░  ░░░░░ ░░░░░ 
+                                                                     
+                                                                     
+                                                                     
+    </pre>
+</div>
+
+
+    <div id="content">
+        <p class="section-line">
+            <span class="lead-dash">0----</span>
+            <span class="red flicker-text2">XXX</span>
+            <span class="section-title flicker-text1">[ IV ] WITHIN REACH</span>
+        </p>
+        <div class="section-block">
+            <p class="pale-red text-bleed">
+                <span class="yellow" id="intro-dot">::</span>
+                The IRON <span class="blink2">VEIL</span> drags closer to the Great Rift yet never touches; stray a breath and the dark takes the rest.
+            </p>
+            <p class="pale-red text-drip">
+                <span class="yellow">::</span>
+                Fall behind, and the void gnaws. <span class="blink2">Good luck.</span>
+            </p>
+        </div>
+
+        <p class="section-line">
+            <span class="lead-dash">0----</span>
+            <span class="flicker-text">XXX</span>
+            <span class="section-title">MEMBERS</span>
+        </p>
+        <div class="section-block member-list">
+            <p>
+                <span class="yellow" id="aqero-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('aqero')">aqero</a>
+                <span class="purple">[<a href="https://t.me/detectenemy">telegram</a>]</span>
+            </p>
+            <p>
+                <span class="yellow" id="paris-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('paris')">paris</a>
+                <span class="purple">[<a href="https://t.me/detectenemy">telegram</a>]</span>
+            </p>
+            <p>
+                <span class="yellow" id="euphoria-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('euphoria')">euphoria</a>
+                <span class="purple">[<a href="https://t.me/detectenemy">telegram</a>]</span>
+            </p>
+            <p>
+                <span class="yellow" id="g0th1cad3ath-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('g0th1cad3ath')">g0th1cad3ath</a>
+                <span class="purple">[<a href="https://t.me/detectenemy">telegram</a>]</span>
+            </p>
+            <p>
+                <span class="yellow" id="monteryhack-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('monteryhack')">monteryhack</a>
+                <span class="purple">[<a href="https://t.me/detectenemy">telegram</a>]</span>
+            </p>
+            <p>
+                <span class="yellow" id="enigma-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('enigma')">enigma</a>
+                <span class="purple">[<a href="https://t.me/detectenemy">telegram</a>]</span>
+            </p>
+            <p>
+                <span class="yellow" id="ceo-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('ceo')">CEO</a>
+                <span class="purple">[<a href="https://t.me/detectenemy">telegram</a>]</span>
+            </p>
+            <p>
+                <span class="yellow" id="cataracta-dot">::</span>
+                <span class="atts">@</span><a href="#" onclick="showMember('cataracta')">cataracta</a>
+                <span class="purple">[<a href="https://t.me/detectenemy">telegram</a>]</span>
+            </p>
+        </div>
+
+        <div id="member-info" class="member-info"></div>
+    </div>
+
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
