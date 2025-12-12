@@ -440,12 +440,14 @@ From here */
   align-items: center;
   gap: 8px;
   margin: 6px 0;
+  overflow-y: hidden;
 }
 
 .member-info {
   text-align: center;
   margin-top: 18px;
   min-height: 140px;
+  overflow-y: hidden;
 }
 
 .member-avatar {
