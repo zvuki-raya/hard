@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         euphoria: {
             name: 'EUPHORIA',
-            image: './assets/euphoria.jpg',
+            image: './assets/graveyard.mp4',
             description: 'smiling ruins whisper your pulse back to zero.',
             track: './assets/japan.mp3'
         },
@@ -160,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.removeOverlay = removeOverlay;
     window.showMember = showMember;
 });
+
 
 
 
