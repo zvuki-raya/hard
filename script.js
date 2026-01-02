@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         enigma: {
             name: 'ENIGMA',
-            image: './assets/enigma.jpg',
+            image: './assets/haha.mp4',
             description: 'enigmafinder.net',
             track: './assets/project_61.mp3'
         },
@@ -160,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.removeOverlay = removeOverlay;
     window.showMember = showMember;
 });
+
 
 
 
