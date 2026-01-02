@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         aqero: {
             name: 'AQERO',
-            image: './assets/aqero.jpg',
+            image: './assets/aqero.png',
             description: 'ready to die? ▸ tg @exitapathy',
-            track: './assets/21savage.mp3'
+            track: './assets/aqerokiller.mp3'
         },
         euphoria: {
             name: 'EUPHORIA',
@@ -132,3 +132,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.removeOverlay = removeOverlay;
     window.showMember = showMember;
 });
+
