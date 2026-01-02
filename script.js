@@ -2,6 +2,32 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentMember = null;
     const audioPlayer = document.getElementById('audio-player');
 
+    
+    function isVideoPath(path) {
+        return typeof path === 'string' && /\.(mp4|webm|ogg)$/i.test(path);
+    }
+
+    function getVideoMimeType(path) {
+        const ext = (path.split('.').pop() || '').toLowerCase();
+        if (ext === 'webm') return 'video/webm';
+        if (ext === 'ogg') return 'video/ogg';
+        return 'video/mp4';
+    }
+
+    function renderMemberMedia(src, name) {
+        if (!src) return '';
+        if (isVideoPath(src)) {
+            const type = getVideoMimeType(src);
+            return `
+                <video class="fade-in member-avatar" autoplay loop muted playsinline preload="metadata">
+                    <source src="${src}" type="${type}">
+                </video>
+            `;
+        }
+
+        return `<img src="${src}" class="fade-in member-avatar" draggable="false" alt="${name}">`;
+    }
+    
     const memberInfoData = {
         paris: {
             name: 'PARIS',
@@ -23,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         g0th1cad3ath: {
             name: 'G0TH1CAD3ATH',
-            image: './assets/fuckall.jpg',
+            image: './assets/wtf.mp4',
             description: 'cemetery wifi left open; every packet screams.',
             track: './assets/hateyou.mp3'
         },
@@ -81,9 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         updateDots(member);
-
+        
+        const mediaHtml = renderMemberMedia(info.image, info.name);
+        
         memberDiv.innerHTML = `
-            <img src="${info.image}" class="fade-in member-avatar" draggable="false" alt="${info.name}">
+            ${mediaHtml}
             <p class="member-name">[ ${info.name} ]</p>
             <hr class="member-separator">
             <p class="glitch member-description">${info.description}</p>
@@ -132,5 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.removeOverlay = removeOverlay;
     window.showMember = showMember;
 });
+
 
 
