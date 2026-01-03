@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             track: './assets/montery.mp3'
         },
         aqero: {
-            name: 'AQERO',
+            name: 'LOREN',
             image: './assets/aqero.png',
             description: 'ready to die? ▸ tg @exitapathy',
             track: './assets/aqerokiller.mp3'
@@ -160,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.removeOverlay = removeOverlay;
     window.showMember = showMember;
 });
+
 
 
 
